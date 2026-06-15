@@ -1,0 +1,8 @@
+battery = 3
+
+# Keep running as long as battery is greater than 0
+while battery > 0:
+    print("Phone is working. Battery level:", battery)
+    battery = battery - 1  # Reduce battery by 1 each lap
+
+print("Phone died!")
