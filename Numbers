@@ -1,0 +1,5 @@
+for num in range(1, 6):  # Checks numbers: 1, 2, 3, 4, 5
+    if num % 2 == 0:     # '%' checks the remainder. If remainder is 0, it's even.
+        print(num, "is Even")
+    else:
+        print(num, "is Odd")
