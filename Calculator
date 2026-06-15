@@ -1,0 +1,32 @@
+# Simple Calculator Project
+
+print("--- Welcome to My Calculator ---")
+
+# 1. Take input from the user
+num1 = float(input("Enter first number: "))
+operator = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+# 2. Make decisions based on the operator
+if operator == "+":
+    result = num1 + num2
+    print(f"Result: {result}")
+    
+elif operator == "-":
+    result = num1 - num2
+    print(f"Result: {result}")
+    
+elif operator == "*":
+    result = num1 * num2
+    print(f"Result: {result}")
+    
+elif operator == "/":
+    # Prevent division by zero
+    if num2 == 0:
+        print("Error! Cannot divide by zero.")
+    else:
+        result = num1 / num2
+        print(f"Result: {result}")
+        
+else:
+    print("Invalid operator! Please use +, -, *, or /.")
